@@ -1,0 +1,143 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-color: #D4B7B9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    background-color: aliceblue;
+    padding: 10px 20px;
+    border-radius: 40px;
+    
+    /* width: 90%; */
+    max-width: 70vw;
+
+    /*if max width:50vw then below
+    /*means 281.09 is container content width(50vw=281.09), so double of it is i.e 562.
+    and if width of desktop is less than 562, then container shrinks.
+    i.e if content inside container shrinks then whole container shrinks.
+    */
+   max-height: 80vh;
+}
+
+.amount{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.amount p{
+    font-size: clamp(14px,8vw,20px);
+}
+/* select,input,button{
+    /* width: 100% */
+    /*100% of form
+}*/
+
+input{
+    padding: 6px;
+    border-radius: 30px;
+    max-width: 50%;
+}
+select:focus{
+    outline: 0;    /*This will stop the orange border on focus (double-click/click).*/
+}
+
+.form{
+    /* padding: 2vw; */
+    margin: 5vh 0vh;
+}
+
+h1{
+    font-size: clamp(20px,8vw,32px);
+    /*if  5vw=25 px, then font size is 25px
+    if 5vw=16px, then font size is 20px
+    if 5vw=44px,, then font size iis 32px
+    */
+    text-align: center;
+    /* flex-wrap: wrap; */
+}
+
+.dropdown{
+    max-width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto;
+    gap: 4vw;
+}
+
+.pehla,.dusra{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+p{
+    text-align: center;
+    font-size: clamp(14px,8vw,20px);
+
+}
+img{
+    height: clamp(20px,5vw,42px);
+    width: clamp(20px,5vw,42px);
+}
+select{
+   /* padding: 2vw; */
+    border-radius: 30px;
+    /* max-width: 50%; */
+    border: none;
+    cursor: pointer;
+    font-size: clamp(10px,5vw,16px);
+}
+select:hover{
+    background-color: white;
+}
+
+.con{
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    font-size: clamp(12px,5vw,18px);
+    /* margin: 10px 10px; */
+    /* min-width: 80vw; */
+    /* height: 5vh; */
+    width: 100%;
+    margin: auto;
+
+}
+button{
+    padding: 4px;
+    border-radius: 10px;
+    min-width: 30%;
+    padding: 5px;
+    font-size: clamp(10px,2vw,16px);
+    cursor: pointer;
+    border: 0px;
+    background-color: rgb(225, 198, 164);
+}
+
+button:hover{
+    background-color: #ded89c;
+}
+
+
+
+
+
+
+
